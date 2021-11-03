@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using UI.PageObjects.Base;
 
 namespace UI.PageObjects
 {

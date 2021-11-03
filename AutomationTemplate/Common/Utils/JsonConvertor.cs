@@ -6,18 +6,20 @@ namespace Common.Utils
 {
     internal class JsonConvertor
     {
-        private readonly JsonSerializerSettings JsonSettings;
+        private readonly JsonSerializerSettings _jsonSettings;
         private static volatile JsonConvertor _instance;
-        private static readonly object _locker = new object();
+        private static readonly object Locker = new object();
         public static JsonConvertor Instance
         {
             get
             {
                 if (_instance != null) return _instance;
-                lock (_locker)
+                lock (Locker)
                 {
                     if (_instance == null)
+                    {
                         _instance = new JsonConvertor();
+                    }
                 }
 
                 return _instance;
@@ -25,18 +27,18 @@ namespace Common.Utils
         }
         private JsonConvertor()
         {
-            JsonSettings = new JsonSerializerSettings
+            _jsonSettings = new JsonSerializerSettings
             {
                 Formatting = Formatting.Indented,
                 ContractResolver = new CamelCasePropertyNamesContractResolver()
             };
 
-            JsonSettings.Converters.Add(new StringEnumConverter());
+            _jsonSettings.Converters.Add(new StringEnumConverter());
         }
 
         public T Convert<T>(string jsonString)
         {
-            var resultObject = JsonConvert.DeserializeObject<T>(jsonString, JsonSettings);
+            var resultObject = JsonConvert.DeserializeObject<T>(jsonString, _jsonSettings);
             return resultObject;
         }
     }

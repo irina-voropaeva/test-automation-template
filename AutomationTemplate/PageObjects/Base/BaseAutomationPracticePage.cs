@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using UI.PageObjects.Shared;
 
-namespace UI.PageObjects
+namespace UI.PageObjects.Base
 {
     public abstract class BaseAutomationPracticePage : BasePage
     {

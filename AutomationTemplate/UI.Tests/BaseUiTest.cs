@@ -4,8 +4,6 @@ using Common.Utils;
 using Common.Utils.Configuration;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Edge;
 using UI.Services;
 
 namespace UI.Tests
@@ -41,6 +39,7 @@ namespace UI.Tests
             BaseUrl = Config.Instance.BaseUrl;
         }
 
+        [OneTimeTearDown]
         public void OneTimeTearDownUi()
         {
         }

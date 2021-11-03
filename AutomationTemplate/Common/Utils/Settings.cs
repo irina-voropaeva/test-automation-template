@@ -86,7 +86,7 @@ namespace Common.Utils
             new Uri(Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase))
                 .LocalPath;
 
-        var chromeDriverPath = string.Concat(currentPath, "\\drivers");
+        var chromeDriverPath = string.Concat(currentPath, "\\Drivers");
 
         return chromeDriverPath;
         }

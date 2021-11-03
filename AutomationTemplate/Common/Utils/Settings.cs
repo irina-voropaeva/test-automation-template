@@ -59,7 +59,9 @@ namespace Common.Utils
 
                             var chromeDriverPath = GetChromeDriverPath();
 
-                            var chromeDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(chromeDriverPath));
+                            var chromeDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(chromeDriverPath), 
+                                                                chromeOptions, 
+                                                                TimeSpan.FromSeconds(30));
                             return chromeDriver;
                         }
                     case "firefox":

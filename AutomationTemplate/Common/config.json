@@ -3,6 +3,6 @@
   
   "driverConfig": {
     "browserType": "chrome",
-    "headlessViewEnabled": true
+    "headlessViewEnabled": false
     }
 }

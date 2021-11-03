@@ -6,6 +6,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
+using UI.Services;
 
 namespace UI.Tests
 {
@@ -15,10 +16,17 @@ namespace UI.Tests
         [ThreadStatic]
         protected static IWebDriver Driver;
 
+        [ThreadStatic] protected static WebElementHelper WebElementHelper;
+
         [SetUp]
         public void SetUpUi()
         {
             Driver = Settings.Instance.GetDriver();
+
+            Driver.Navigate()
+                  .GoToUrl(Config.Instance.BaseUrl);
+
+            WebElementHelper = new WebElementHelper(Driver);
         }
 
         [TearDown]

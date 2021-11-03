@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://automationpractice.com/",
+  
+  "driverConfig": {
+    "browserType": "chrome",
+    "headlessViewEnabled": false
+    }
+}

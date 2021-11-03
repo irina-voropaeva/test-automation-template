@@ -5,12 +5,12 @@ namespace UI.Tests.GeneralTests
 {
     public class BaseGeneralTest : BaseUiTest
     {
-        protected Header Header;
+        protected HeaderPage Header;
 
         [SetUp]
         public void GeneralSetUp()
         {
-            Header = new Header(Driver);
+            Header = new HeaderPage(Driver);
         }
     }
 }

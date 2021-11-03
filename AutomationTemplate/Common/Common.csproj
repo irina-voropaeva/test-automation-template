@@ -8,13 +8,14 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="Selenium.WebDriver" Version="4.0.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="92.0.4515.10700" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Drivers\chromedriver.exe">
+    <None Update="drivers\chromedriver.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

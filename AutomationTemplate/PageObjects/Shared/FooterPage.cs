@@ -3,9 +3,9 @@ using UI.PageObjects.Base;
 
 namespace UI.PageObjects.Shared
 {
-    public class Footer : BasePage
+    public class FooterPage : BasePage
     {
-        public Footer(IWebDriver driver) : base(driver)
+        public FooterPage(IWebDriver driver) : base(driver)
         {
         }
     }

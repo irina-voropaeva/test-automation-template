@@ -5,13 +5,13 @@ namespace UI.PageObjects.Base
 {
     public abstract class BaseAutomationPracticePage : BasePage
     {
-        public Header Header;
-        public Footer Footer;
+        public HeaderPage HeaderPage;
+        public FooterPage FooterPage;
 
         protected BaseAutomationPracticePage(IWebDriver driver) : base(driver)
         {
-            Header = new Header(driver);
-            Footer = new Footer(driver);
+            HeaderPage = new HeaderPage(driver);
+            FooterPage = new FooterPage(driver);
         }
     }
 }

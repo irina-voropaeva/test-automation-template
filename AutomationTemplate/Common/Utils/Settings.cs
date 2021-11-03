@@ -61,7 +61,7 @@ namespace Common.Utils
 
                             var chromeDriver = new ChromeDriver(ChromeDriverService.CreateDefaultService(chromeDriverPath), 
                                                                 chromeOptions, 
-                                                                TimeSpan.FromSeconds(30));
+                                                                TimeSpan.FromSeconds(Config.Instance.DriverConfig.WaitTimeout));
                             return chromeDriver;
                         }
                     case "firefox":

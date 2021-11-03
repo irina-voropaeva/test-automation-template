@@ -1,8 +1,9 @@
 {
   "baseUrl": "http://automationpractice.com/",
-  
+
   "driverConfig": {
     "browserType": "chrome",
-    "headlessViewEnabled": false
-    }
+    "headlessViewEnabled": false,
+    "waitTimeout": 30
+  }
 }

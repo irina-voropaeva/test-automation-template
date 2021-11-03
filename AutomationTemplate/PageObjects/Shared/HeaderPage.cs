@@ -3,17 +3,17 @@ using UI.PageObjects.Base;
 
 namespace UI.PageObjects.Shared
 {
-    public class Header : BasePage
+    public class HeaderPage : BasePage
     {
         public By SearchFieldBy => By.Id("search_query_top");
 
         public By SearchButton => By.Name("submit_search");
 
-        public Header(IWebDriver driver) : base(driver)
+        public HeaderPage(IWebDriver driver) : base(driver)
         {
         }
 
-        public Header ClickSearchField()
+        public HeaderPage ClickSearchField()
         {
             FindElement(SearchFieldBy)
                 .Click();
@@ -21,7 +21,7 @@ namespace UI.PageObjects.Shared
             return this;
         }
 
-        public Header EnterSearchText(string text)
+        public HeaderPage EnterSearchText(string text)
         {
             FindElement(SearchFieldBy)
                 .SendKeys(text);

@@ -5,5 +5,6 @@
         public string BrowserType { get; set; }
         public bool HeadlessViewEnabled { get; set; }
 
+        public int WaitTimeout { get; set; }
     }
 }

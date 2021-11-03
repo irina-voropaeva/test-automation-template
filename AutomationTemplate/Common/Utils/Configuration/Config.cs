@@ -12,7 +12,9 @@ namespace Common.Utils.Configuration
         private static volatile Config _instance;
         private static readonly object Locker = new object();
 
-
+        private Config()
+        {
+        }
 
         public static Config Instance
         {

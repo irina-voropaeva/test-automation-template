@@ -1,31 +1,29 @@
 ﻿using System;
 using Common;
+using NUnit.Framework;
 
 namespace Api.Tests
 {
     public abstract class BaseApiTest : BaseTest
     {
         [SetUp]
-        public void SetUpUi()
+        public void SetUpApi()
         {
-            throw new NotImplementedException();
         }
 
         [TearDown]
-        public void TearDownUi()
+        public void TearDownApi()
         {
-            throw new NotImplementedException();
         }
 
         [OneTimeSetUp]
-        public void OneTimeSetUpUi()
+        public void OneTimeSetUpApi()
         {
-            throw new NotImplementedException();
         }
 
-        public void OneTimeTearDownUi()
+        [OneTimeTearDown]
+        public void OneTimeTearDownApi()
         {
-            throw new NotImplementedException();
         }
     }
 }

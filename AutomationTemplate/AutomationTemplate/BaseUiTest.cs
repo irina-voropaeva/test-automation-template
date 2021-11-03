@@ -1,5 +1,6 @@
 ﻿using System;
 using Common;
+using NUnit.Framework;
 
 namespace UI.Tests
 {

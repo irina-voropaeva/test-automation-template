@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Tests", "AutomationTemplate\UI.Tests.csproj", "{BB5BC8E8-D9AE-46DE-8D47-14F2357D892B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.PageObjects", "PageObjects\UI.PageObjects.csproj", "{B601C5A6-ED17-405D-98B7-1D8B91B69381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.PageObjects", "PageObjects\UI.PageObjects.csproj", "{B601C5A6-ED17-405D-98B7-1D8B91B69381}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{0FC4DD1B-6323-4F2A-989D-761D8762FF33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{0FC4DD1B-6323-4F2A-989D-761D8762FF33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{2FA233EF-82A3-4215-8448-7D5F66EF3468}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{2FA233EF-82A3-4215-8448-7D5F66EF3468}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Tests", "Api.Tests\Api.Tests.csproj", "{D820D05D-65B4-4A6F-889A-28B31507BA56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Tests", "Api.Tests\Api.Tests.csproj", "{D820D05D-65B4-4A6F-889A-28B31507BA56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.Services", "UI.Services\UI.Services.csproj", "{13A498AB-73A6-4012-BC3F-A27B178B0BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Services", "UI.Services\UI.Services.csproj", "{13A498AB-73A6-4012-BC3F-A27B178B0BF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Services", "API.Services\Api.Services.csproj", "{E14A4FAB-646B-4CA2-91CD-5F73CBCA9687}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Services", "API.Services\Api.Services.csproj", "{E14A4FAB-646B-4CA2-91CD-5F73CBCA9687}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Tests", "UI.Tests\UI.Tests.csproj", "{60376CF1-0912-4FFE-A3A4-BB7E226322F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB5BC8E8-D9AE-46DE-8D47-14F2357D892B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB5BC8E8-D9AE-46DE-8D47-14F2357D892B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB5BC8E8-D9AE-46DE-8D47-14F2357D892B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB5BC8E8-D9AE-46DE-8D47-14F2357D892B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B601C5A6-ED17-405D-98B7-1D8B91B69381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B601C5A6-ED17-405D-98B7-1D8B91B69381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B601C5A6-ED17-405D-98B7-1D8B91B69381}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{E14A4FAB-646B-4CA2-91CD-5F73CBCA9687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E14A4FAB-646B-4CA2-91CD-5F73CBCA9687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E14A4FAB-646B-4CA2-91CD-5F73CBCA9687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60376CF1-0912-4FFE-A3A4-BB7E226322F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60376CF1-0912-4FFE-A3A4-BB7E226322F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60376CF1-0912-4FFE-A3A4-BB7E226322F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60376CF1-0912-4FFE-A3A4-BB7E226322F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

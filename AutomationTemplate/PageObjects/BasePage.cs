@@ -1,4 +1,4 @@
-﻿namespace PageObjects
+﻿namespace UI.PageObjects
 {
     public abstract class BasePage
     {

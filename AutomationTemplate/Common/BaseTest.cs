@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 
 namespace Common
 {
@@ -8,24 +9,22 @@ namespace Common
         [SetUp]
         public void SetUp()
         {
-            throw new NotImplementedException();
         }
 
         [TearDown]
         public void TearDown()
         {
-            throw new NotImplementedException();
         }
 
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            throw new NotImplementedException();
         }
 
+
+        [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            throw new NotImplementedException();
         }
     }
 }
